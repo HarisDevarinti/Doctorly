@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  @apply bg-white m-0; /* Tailwind CSS */
+}
+/* Reset margins/padding globally */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+
+/* Custom CSS for date picker input */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(42%) sepia(100%) saturate(500%) hue-rotate(85deg) brightness(90%) contrast(90%);
+}
